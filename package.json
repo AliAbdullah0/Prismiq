@@ -1,5 +1,5 @@
 {
-  "name": "prismatik",
+  "name": "prismiq",
   "version": "1.0.0",
   "description": "A TypeScript-based language for defining database schemas and generating Prisma schemas",
   "main": "dist/index.js",
@@ -26,12 +26,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AliAbdullah0/Prismatik"
+    "url": "git+https://github.com/AliAbdullah0/Prismiq"
   },
   "bugs": {
-    "url": "https://github.com/AliAbdullah0/Prismatik/issues"
+    "url": "https://github.com/AliAbdullah0/Prismiq/issues"
   },
-  "homepage": "https://github.com/AliAbdullah0/Prismatik?tab=readme-ov-file#-prismatik-schema-builder",
+  "homepage": "https://github.com/AliAbdullah0/Prismiq?tab=readme-ov-file#-prismatik-schema-builder",
   "devDependencies": {
     "@types/babel__core": "^7.20.5",
     "@types/jest": "^29.5.14",

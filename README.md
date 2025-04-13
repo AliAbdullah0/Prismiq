@@ -1,4 +1,4 @@
-# ✨ Prismatik Schema Builder
+# ✨ Prismiq Schema Builder
 
 A TypeScript-powered builder to generate **Prisma-compatible schema files** programmatically. Define models, fields, and relationships using a clean API and generate `.prisma` schemas effortlessly.
 
@@ -38,7 +38,7 @@ import {
   getSchema,
   savePrismaSchema,
   reset
-} from 'prismatik';
+} from 'prismiq';
 ```
 
 ---
