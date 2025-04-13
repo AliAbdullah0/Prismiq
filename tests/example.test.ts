@@ -2,7 +2,7 @@ import { createModel, addField, setPrimaryKey, addRelation, generatePrismaSchema
 
 describe('Prysm SchemaBuilder', () => {
   beforeEach(() => {
-    reset(); // Clear schema before each test
+    reset();
   });
 
   test('should generate a simple User schema with primary key and default value', () => {
@@ -21,7 +21,7 @@ describe('Prysm SchemaBuilder', () => {
     createModel('User');
     addField('User', 'id', 'Int', 'cuid()');
     setPrimaryKey('User', 'id');
-    addField('User', 'email', 'String', undefined, true); // Explicitly unique
+    addField('User', 'email', 'String', undefined, true);
 
     const schema = generatePrismaSchema();
     expect(schema).toContain('email String @unique');
