@@ -26,12 +26,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AliAbdullah0/prysm.git"
+    "url": "git+https://github.com/AliAbdullah0/Prismatik"
   },
   "bugs": {
-    "url": "https://github.com/AliAbdullah0/prysm/issues"
+    "url": "https://github.com/AliAbdullah0/Prismatik/issues"
   },
-  "homepage": "https://github.com/AliAbdullah0/prysm#readme",
+  "homepage": "https://github.com/AliAbdullah0/Prismatik?tab=readme-ov-file#-prismatik-schema-builder",
   "devDependencies": {
     "@types/babel__core": "^7.20.5",
     "@types/jest": "^29.5.14",
