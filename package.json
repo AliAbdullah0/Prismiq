@@ -1,5 +1,5 @@
 {
-  "name": "prysm",
+  "name": "prismatik",
   "version": "1.0.0",
   "description": "A TypeScript-based language for defining database schemas and generating Prisma schemas",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "typescript",
     "orm"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Zedento aliabdullah10nov2006@gmail.com>",
   "license": "MIT",
   "files": [
     "dist",
@@ -26,20 +26,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/prysm.git"
+    "url": "git+https://github.com/AliAbdullah0/prysm.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/prysm/issues"
+    "url": "https://github.com/AliAbdullah0/prysm/issues"
   },
   "homepage": "https://github.com/AliAbdullah0/prysm#readme",
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^22.7.4",
+    "@types/babel__core": "^7.20.5",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.12.7",
     "jest": "^29.7.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.4.5"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }
