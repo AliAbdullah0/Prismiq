@@ -9,7 +9,7 @@ A TypeScript-powered builder to generate **Prisma-compatible schema files** prog
 Clone this repository and install dependencies:
 
 ```bash
-npm install prismatik
+npm install prismiq
 ```
 
 ---
