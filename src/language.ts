@@ -95,7 +95,6 @@ class SchemaBuilder {
     generatePrismaSchema(): string {
         let prismaSchema = `datasource db {\n  provider = "postgresql"\n  url      = env("DATABASE_URL")\n}\n\n`;
 
-        // Preprocess relations to set isUnique for one-to-one relationships
         for (const model of this.schema.models) {
             for (const relation of model.relations) {
                 if (relation.type === 'OneToOne') {
@@ -109,11 +108,9 @@ class SchemaBuilder {
             }
         }
 
-        // Generate schema
         for (const model of this.schema.models) {
             prismaSchema += `model ${model.name} {\n`;
 
-            // Generate fields
             for (const field of model.fields) {
                 let fieldDef = `  ${field.name} ${field.type}`;
                 if (field.isPrimaryKey) {
@@ -128,7 +125,6 @@ class SchemaBuilder {
                 prismaSchema += `${fieldDef}\n`;
             }
 
-            // Generate relations
             for (const relation of model.relations) {
                 if (relation.type === 'OneToMany') {
                     prismaSchema += `  ${relation.name} ${relation.relatedModel}[]\n`;
