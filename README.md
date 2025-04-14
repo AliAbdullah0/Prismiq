@@ -24,6 +24,61 @@ npm install prismiq
 
 ---
 
+# SchemaBuilder Functions
+
+This document explains the parameters for each function in the SchemaBuilder TypeScript class.
+
+## createModel(modelName: string)
+
+Creates a new model with the specified name.
+
+- `modelName`: Name of the model to create.
+
+## addField(modelName: string, fieldName: string, type: Type, defaultValue?: Default, isUnique?: boolean)
+
+Adds a field to an existing model with the specified attributes.
+
+- `modelName`: Name of the model to which the field belongs.
+- `fieldName`: Name of the field to add.
+- `type`: Type of the field. Supported types are "Int", "String", "Boolean", "Date", "float", "Json".
+- `defaultValue` (optional): Default value for the field (e.g., "cuid()", "uid()", "now()").
+- `isUnique` (optional): Specifies if the field should be unique.
+
+## setPrimaryKey(modelName: string, fieldName: string)
+
+Sets the primary key for a field in a model.
+
+- `modelName`: Name of the model.
+- `fieldName`: Name of the field to set as the primary key.
+
+## addRelation(modelName: string, relationName: string, type: RelationType, relatedModel: string, inverseRelation?: string)
+
+Defines a relationship between two models.
+
+- `modelName`: Name of the model where the relationship originates.
+- `relationName`: Name of the relationship.
+- `type`: Type of the relationship. Supported types are "OneToMany", "ManyToOne", "ManyToMany", "OneToOne".
+- `relatedModel`: Name of the related model.
+- `inverseRelation` (optional): Name of the inverse relationship.
+
+## generatePrismaSchema()
+
+Generates a Prisma schema based on the configured models and relationships.
+
+Returns: A string containing the generated Prisma schema.
+
+## savePrismaSchema(Filename: string)
+
+Saves the generated Prisma schema to a file.
+
+- `FileName`: Identifier for the schema file.
+
+## reset()
+
+Resets the SchemaBuilder instance by clearing all models and configurations.
+
+
+
 ## 🧠 Usage
 
 ### 📁 Import Functions

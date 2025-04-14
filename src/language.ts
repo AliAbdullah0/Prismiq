@@ -31,11 +31,12 @@ class SchemaBuilder {
         this.getModel(modelName);
     }
 
-    addField(modelName: string, fieldName: string, type: "Int" | "String" | "Boolean" | "Date" | "float" | "Json", defaultValue?: "cuid()" | "uid()" | "now()", isUnique?: boolean): void {
+    addField(modelName: string, fieldName: string, type: "Int" | "String" | "Boolean" | "String[]"| "Date" | "float" | "Json", defaultValue?: "cuid()" | "uid()" | "now()", isUnique?: boolean): void {
         const model = this.getModel(modelName);
         const typeMapping: { [key: string]: string } = {
             'Int': 'Int',
             'String': 'String',
+            'String[]': 'String[]',
             'Boolean': 'Boolean',
             'Date': 'DateTime',
             'float': 'Float',
