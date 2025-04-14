@@ -1,6 +1,6 @@
 {
   "name": "prismiq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript-based language for defining database schemas and generating Prisma schemas",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
